@@ -1,5 +1,5 @@
 --version  = 1
---Eplanner version = 2022.8.8251.20557
+--Eplanner version = 2022.7.8245.20062
 ------------------------------------------------------------------------------
 PAC_name = 'T1-Вентиляция'
 PAC_id = '26448'
@@ -80,9 +80,9 @@ devices =
             {
                 {
                 node          = 1,
-                offset        = 1,
-                physical_port = 3,
-                logical_port  = 4,
+                offset        = 0,
+                physical_port = 2,
+                logical_port  = 3,
                 module_offset = 0
                 },
             },
@@ -98,9 +98,9 @@ devices =
             {
                 {
                 node          = 1,
-                offset        = 0,
-                physical_port = 2,
-                logical_port  = 3,
+                offset        = 1,
+                physical_port = 3,
+                logical_port  = 4,
                 module_offset = 0
                 },
             },
@@ -108,7 +108,7 @@ devices =
 
         {
         name    = 'PV1M1',
-        descr   = 'Приточка',
+        descr   = 'Вытяжка',
         dtype   = 2,
         subtype = 1, -- M
         article = '',
@@ -139,7 +139,7 @@ devices =
 
         {
         name    = 'PV1M2',
-        descr   = 'Вытяжка',
+        descr   = 'Приточка',
         dtype   = 2,
         subtype = 1, -- M
         article = '',
@@ -301,8 +301,8 @@ devices =
         article = '',
         prop = --Дополнительные свойства
             {
-            IN_VALUE = 'PV1TE3',
-            OUT_VALUE = 'PV1VC3',
+            IN_VALUE = 'PV1TE2',
+            OUT_VALUE = 'PV1VC2',
             },
         par =
             {
@@ -333,8 +333,8 @@ devices =
         article = '',
         prop = --Дополнительные свойства
             {
-            IN_VALUE = 'PV1TE2',
-            OUT_VALUE = 'PV1VC2',
+            IN_VALUE = 'PV1TE3',
+            OUT_VALUE = 'PV1VC3',
             },
         par =
             {

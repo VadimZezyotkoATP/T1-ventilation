@@ -1,5 +1,5 @@
 --version  = 1
---Eplanner version = 2022.8.8251.20557
+--Eplanner version = 2022.7.8245.20062
 --PAC_name = 'T1-Вентиляция'
 ------------------------------------------------------------------------------
 ------------------------------------------------------------------------------
@@ -30,5 +30,7 @@ local prg =
         PV1TS1 = TS('PV1TS1'),
     },
 
+    user_object_user1 = OBJECT1,
     }
+add_functionality(prg.user_object_user1, basic_user_object)
 return prg
